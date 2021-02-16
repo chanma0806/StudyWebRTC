@@ -1,0 +1,656 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE0CBEB925DBDF5C00F6F28A /* StudyWebRTCApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0CBEB825DBDF5C00F6F28A /* StudyWebRTCApp.swift */; };
+		EE0CBEBB25DBDF5C00F6F28A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0CBEBA25DBDF5C00F6F28A /* ContentView.swift */; };
+		EE0CBEBD25DBDF5D00F6F28A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE0CBEBC25DBDF5D00F6F28A /* Assets.xcassets */; };
+		EE0CBEC025DBDF5D00F6F28A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE0CBEBF25DBDF5D00F6F28A /* Preview Assets.xcassets */; };
+		EE0CBECB25DBDF5D00F6F28A /* StudyWebRTCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0CBECA25DBDF5D00F6F28A /* StudyWebRTCTests.swift */; };
+		EE0CBED625DBDF5E00F6F28A /* StudyWebRTCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0CBED525DBDF5E00F6F28A /* StudyWebRTCUITests.swift */; };
+		EE0CBEEA25DBE09400F6F28A /* WebRTC in Frameworks */ = {isa = PBXBuildFile; productRef = EE0CBEE925DBE09400F6F28A /* WebRTC */; };
+		EE0CBEEF25DBE0DD00F6F28A /* SignalClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0CBEEE25DBE0DD00F6F28A /* SignalClient.swift */; };
+		EE0CBEF525DBE40300F6F28A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0CBEF425DBE40300F6F28A /* Message.swift */; };
+		EE0CBEFD25DBE4BD00F6F28A /* SessionDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0CBEFC25DBE4BD00F6F28A /* SessionDescription.swift */; };
+		EE0CBF0225DBE72700F6F28A /* IceCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0CBF0125DBE72700F6F28A /* IceCandidate.swift */; };
+		EE0CBF1025DBF17B00F6F28A /* WebRTCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0CBF0F25DBF17B00F6F28A /* WebRTCClient.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE0CBEC725DBDF5D00F6F28A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE0CBEAD25DBDF5C00F6F28A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE0CBEB425DBDF5C00F6F28A;
+			remoteInfo = StudyWebRTC;
+		};
+		EE0CBED225DBDF5E00F6F28A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE0CBEAD25DBDF5C00F6F28A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE0CBEB425DBDF5C00F6F28A;
+			remoteInfo = StudyWebRTC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EE0CBEB525DBDF5C00F6F28A /* StudyWebRTC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyWebRTC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE0CBEB825DBDF5C00F6F28A /* StudyWebRTCApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyWebRTCApp.swift; sourceTree = "<group>"; };
+		EE0CBEBA25DBDF5C00F6F28A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EE0CBEBC25DBDF5D00F6F28A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE0CBEBF25DBDF5D00F6F28A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EE0CBEC125DBDF5D00F6F28A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE0CBEC625DBDF5D00F6F28A /* StudyWebRTCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudyWebRTCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE0CBECA25DBDF5D00F6F28A /* StudyWebRTCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyWebRTCTests.swift; sourceTree = "<group>"; };
+		EE0CBECC25DBDF5D00F6F28A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE0CBED125DBDF5E00F6F28A /* StudyWebRTCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudyWebRTCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE0CBED525DBDF5E00F6F28A /* StudyWebRTCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyWebRTCUITests.swift; sourceTree = "<group>"; };
+		EE0CBED725DBDF5E00F6F28A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE0CBEEE25DBE0DD00F6F28A /* SignalClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalClient.swift; sourceTree = "<group>"; };
+		EE0CBEF425DBE40300F6F28A /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		EE0CBEFC25DBE4BD00F6F28A /* SessionDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDescription.swift; sourceTree = "<group>"; };
+		EE0CBF0125DBE72700F6F28A /* IceCandidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCandidate.swift; sourceTree = "<group>"; };
+		EE0CBF0F25DBF17B00F6F28A /* WebRTCClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCClient.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE0CBEB225DBDF5C00F6F28A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE0CBEEA25DBE09400F6F28A /* WebRTC in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE0CBEC325DBDF5D00F6F28A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE0CBECE25DBDF5E00F6F28A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE0CBEAC25DBDF5C00F6F28A = {
+			isa = PBXGroup;
+			children = (
+				EE0CBEB725DBDF5C00F6F28A /* StudyWebRTC */,
+				EE0CBEC925DBDF5D00F6F28A /* StudyWebRTCTests */,
+				EE0CBED425DBDF5E00F6F28A /* StudyWebRTCUITests */,
+				EE0CBEB625DBDF5C00F6F28A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE0CBEB625DBDF5C00F6F28A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE0CBEB525DBDF5C00F6F28A /* StudyWebRTC.app */,
+				EE0CBEC625DBDF5D00F6F28A /* StudyWebRTCTests.xctest */,
+				EE0CBED125DBDF5E00F6F28A /* StudyWebRTCUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE0CBEB725DBDF5C00F6F28A /* StudyWebRTC */ = {
+			isa = PBXGroup;
+			children = (
+				EE0CBEF325DBE3F000F6F28A /* Entity */,
+				EE0CBEE725DBDF7E00F6F28A /* Service */,
+				EE0CBEE625DBDF7200F6F28A /* VIew */,
+				EE0CBEBC25DBDF5D00F6F28A /* Assets.xcassets */,
+				EE0CBEC125DBDF5D00F6F28A /* Info.plist */,
+				EE0CBEBE25DBDF5D00F6F28A /* Preview Content */,
+			);
+			path = StudyWebRTC;
+			sourceTree = "<group>";
+		};
+		EE0CBEBE25DBDF5D00F6F28A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EE0CBEBF25DBDF5D00F6F28A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EE0CBEC925DBDF5D00F6F28A /* StudyWebRTCTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE0CBECA25DBDF5D00F6F28A /* StudyWebRTCTests.swift */,
+				EE0CBECC25DBDF5D00F6F28A /* Info.plist */,
+			);
+			path = StudyWebRTCTests;
+			sourceTree = "<group>";
+		};
+		EE0CBED425DBDF5E00F6F28A /* StudyWebRTCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EE0CBED525DBDF5E00F6F28A /* StudyWebRTCUITests.swift */,
+				EE0CBED725DBDF5E00F6F28A /* Info.plist */,
+			);
+			path = StudyWebRTCUITests;
+			sourceTree = "<group>";
+		};
+		EE0CBEE625DBDF7200F6F28A /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				EE0CBEB825DBDF5C00F6F28A /* StudyWebRTCApp.swift */,
+				EE0CBEBA25DBDF5C00F6F28A /* ContentView.swift */,
+			);
+			path = VIew;
+			sourceTree = "<group>";
+		};
+		EE0CBEE725DBDF7E00F6F28A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				EE0CBEEE25DBE0DD00F6F28A /* SignalClient.swift */,
+				EE0CBF0F25DBF17B00F6F28A /* WebRTCClient.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		EE0CBEF325DBE3F000F6F28A /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				EE0CBEF425DBE40300F6F28A /* Message.swift */,
+				EE0CBEFC25DBE4BD00F6F28A /* SessionDescription.swift */,
+				EE0CBF0125DBE72700F6F28A /* IceCandidate.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE0CBEB425DBDF5C00F6F28A /* StudyWebRTC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE0CBEDA25DBDF5E00F6F28A /* Build configuration list for PBXNativeTarget "StudyWebRTC" */;
+			buildPhases = (
+				EE0CBEB125DBDF5C00F6F28A /* Sources */,
+				EE0CBEB225DBDF5C00F6F28A /* Frameworks */,
+				EE0CBEB325DBDF5C00F6F28A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StudyWebRTC;
+			packageProductDependencies = (
+				EE0CBEE925DBE09400F6F28A /* WebRTC */,
+			);
+			productName = StudyWebRTC;
+			productReference = EE0CBEB525DBDF5C00F6F28A /* StudyWebRTC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE0CBEC525DBDF5D00F6F28A /* StudyWebRTCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE0CBEDD25DBDF5E00F6F28A /* Build configuration list for PBXNativeTarget "StudyWebRTCTests" */;
+			buildPhases = (
+				EE0CBEC225DBDF5D00F6F28A /* Sources */,
+				EE0CBEC325DBDF5D00F6F28A /* Frameworks */,
+				EE0CBEC425DBDF5D00F6F28A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE0CBEC825DBDF5D00F6F28A /* PBXTargetDependency */,
+			);
+			name = StudyWebRTCTests;
+			productName = StudyWebRTCTests;
+			productReference = EE0CBEC625DBDF5D00F6F28A /* StudyWebRTCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EE0CBED025DBDF5E00F6F28A /* StudyWebRTCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE0CBEE025DBDF5E00F6F28A /* Build configuration list for PBXNativeTarget "StudyWebRTCUITests" */;
+			buildPhases = (
+				EE0CBECD25DBDF5E00F6F28A /* Sources */,
+				EE0CBECE25DBDF5E00F6F28A /* Frameworks */,
+				EE0CBECF25DBDF5E00F6F28A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE0CBED325DBDF5E00F6F28A /* PBXTargetDependency */,
+			);
+			name = StudyWebRTCUITests;
+			productName = StudyWebRTCUITests;
+			productReference = EE0CBED125DBDF5E00F6F28A /* StudyWebRTCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE0CBEAD25DBDF5C00F6F28A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					EE0CBEB425DBDF5C00F6F28A = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					EE0CBEC525DBDF5D00F6F28A = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = EE0CBEB425DBDF5C00F6F28A;
+					};
+					EE0CBED025DBDF5E00F6F28A = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = EE0CBEB425DBDF5C00F6F28A;
+					};
+				};
+			};
+			buildConfigurationList = EE0CBEB025DBDF5C00F6F28A /* Build configuration list for PBXProject "StudyWebRTC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE0CBEAC25DBDF5C00F6F28A;
+			packageReferences = (
+				EE0CBEE825DBE09400F6F28A /* XCRemoteSwiftPackageReference "WebRTC" */,
+			);
+			productRefGroup = EE0CBEB625DBDF5C00F6F28A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE0CBEB425DBDF5C00F6F28A /* StudyWebRTC */,
+				EE0CBEC525DBDF5D00F6F28A /* StudyWebRTCTests */,
+				EE0CBED025DBDF5E00F6F28A /* StudyWebRTCUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE0CBEB325DBDF5C00F6F28A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE0CBEC025DBDF5D00F6F28A /* Preview Assets.xcassets in Resources */,
+				EE0CBEBD25DBDF5D00F6F28A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE0CBEC425DBDF5D00F6F28A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE0CBECF25DBDF5E00F6F28A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE0CBEB125DBDF5C00F6F28A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE0CBEFD25DBE4BD00F6F28A /* SessionDescription.swift in Sources */,
+				EE0CBEBB25DBDF5C00F6F28A /* ContentView.swift in Sources */,
+				EE0CBEF525DBE40300F6F28A /* Message.swift in Sources */,
+				EE0CBF0225DBE72700F6F28A /* IceCandidate.swift in Sources */,
+				EE0CBEEF25DBE0DD00F6F28A /* SignalClient.swift in Sources */,
+				EE0CBEB925DBDF5C00F6F28A /* StudyWebRTCApp.swift in Sources */,
+				EE0CBF1025DBF17B00F6F28A /* WebRTCClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE0CBEC225DBDF5D00F6F28A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE0CBECB25DBDF5D00F6F28A /* StudyWebRTCTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE0CBECD25DBDF5E00F6F28A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE0CBED625DBDF5E00F6F28A /* StudyWebRTCUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE0CBEC825DBDF5D00F6F28A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE0CBEB425DBDF5C00F6F28A /* StudyWebRTC */;
+			targetProxy = EE0CBEC725DBDF5D00F6F28A /* PBXContainerItemProxy */;
+		};
+		EE0CBED325DBDF5E00F6F28A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE0CBEB425DBDF5C00F6F28A /* StudyWebRTC */;
+			targetProxy = EE0CBED225DBDF5E00F6F28A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EE0CBED825DBDF5E00F6F28A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EE0CBED925DBDF5E00F6F28A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE0CBEDB25DBDF5E00F6F28A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"StudyWebRTC/Preview Content\"";
+				DEVELOPMENT_TEAM = MZU2PY4WRX;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = StudyWebRTC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.maruyama.StudyWebRTC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE0CBEDC25DBDF5E00F6F28A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"StudyWebRTC/Preview Content\"";
+				DEVELOPMENT_TEAM = MZU2PY4WRX;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = StudyWebRTC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.maruyama.StudyWebRTC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EE0CBEDE25DBDF5E00F6F28A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MZU2PY4WRX;
+				INFOPLIST_FILE = StudyWebRTCTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.maruyama.StudyWebRTCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StudyWebRTC.app/StudyWebRTC";
+			};
+			name = Debug;
+		};
+		EE0CBEDF25DBDF5E00F6F28A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MZU2PY4WRX;
+				INFOPLIST_FILE = StudyWebRTCTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.maruyama.StudyWebRTCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StudyWebRTC.app/StudyWebRTC";
+			};
+			name = Release;
+		};
+		EE0CBEE125DBDF5E00F6F28A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MZU2PY4WRX;
+				INFOPLIST_FILE = StudyWebRTCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.maruyama.StudyWebRTCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StudyWebRTC;
+			};
+			name = Debug;
+		};
+		EE0CBEE225DBDF5E00F6F28A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MZU2PY4WRX;
+				INFOPLIST_FILE = StudyWebRTCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.maruyama.StudyWebRTCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StudyWebRTC;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE0CBEB025DBDF5C00F6F28A /* Build configuration list for PBXProject "StudyWebRTC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE0CBED825DBDF5E00F6F28A /* Debug */,
+				EE0CBED925DBDF5E00F6F28A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE0CBEDA25DBDF5E00F6F28A /* Build configuration list for PBXNativeTarget "StudyWebRTC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE0CBEDB25DBDF5E00F6F28A /* Debug */,
+				EE0CBEDC25DBDF5E00F6F28A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE0CBEDD25DBDF5E00F6F28A /* Build configuration list for PBXNativeTarget "StudyWebRTCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE0CBEDE25DBDF5E00F6F28A /* Debug */,
+				EE0CBEDF25DBDF5E00F6F28A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE0CBEE025DBDF5E00F6F28A /* Build configuration list for PBXNativeTarget "StudyWebRTCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE0CBEE125DBDF5E00F6F28A /* Debug */,
+				EE0CBEE225DBDF5E00F6F28A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EE0CBEE825DBE09400F6F28A /* XCRemoteSwiftPackageReference "WebRTC" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alexpiezo/WebRTC.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.31567;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EE0CBEE925DBE09400F6F28A /* WebRTC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE0CBEE825DBE09400F6F28A /* XCRemoteSwiftPackageReference "WebRTC" */;
+			productName = WebRTC;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = EE0CBEAD25DBDF5C00F6F28A /* Project object */;
+}
