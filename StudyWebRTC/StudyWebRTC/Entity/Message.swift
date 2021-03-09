@@ -39,7 +39,7 @@ extension Message: Codable {
         switch self {
         case .sdp(let sessionDescription):
             try container.encode(sessionDescription, forKey: .payload)
-            try container.encode(String(describing: sessionDescription.self), forKey: .type)
+            try container.encode(String(describing: SessionDescription.self), forKey: .type)
         case .candinate(let candidate):
             try container.encode(candidate, forKey: .payload)
             try container.encode(String(describing: IceCandidate.self), forKey: .type)

@@ -19,6 +19,10 @@
 		EE0CBEFD25DBE4BD00F6F28A /* SessionDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0CBEFC25DBE4BD00F6F28A /* SessionDescription.swift */; };
 		EE0CBF0225DBE72700F6F28A /* IceCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0CBF0125DBE72700F6F28A /* IceCandidate.swift */; };
 		EE0CBF1025DBF17B00F6F28A /* WebRTCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0CBF0F25DBF17B00F6F28A /* WebRTCClient.swift */; };
+		EE31B75A25E67D52007A672F /* ExtensionWebRTCState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE31B75925E67D52007A672F /* ExtensionWebRTCState.swift */; };
+		EE61DE8825E15386001DE444 /* NativeWebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61DE8725E15386001DE444 /* NativeWebSocket.swift */; };
+		EE8335D825E2892400C766C8 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8335D725E2892400C766C8 /* ContentViewModel.swift */; };
+		EE8335E025E28AC000C766C8 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8335DF25E28AC000C766C8 /* Config.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +60,10 @@
 		EE0CBEFC25DBE4BD00F6F28A /* SessionDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDescription.swift; sourceTree = "<group>"; };
 		EE0CBF0125DBE72700F6F28A /* IceCandidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCandidate.swift; sourceTree = "<group>"; };
 		EE0CBF0F25DBF17B00F6F28A /* WebRTCClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCClient.swift; sourceTree = "<group>"; };
+		EE31B75925E67D52007A672F /* ExtensionWebRTCState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionWebRTCState.swift; sourceTree = "<group>"; };
+		EE61DE8725E15386001DE444 /* NativeWebSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeWebSocket.swift; sourceTree = "<group>"; };
+		EE8335D725E2892400C766C8 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		EE8335DF25E28AC000C766C8 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				EE0CBEF325DBE3F000F6F28A /* Entity */,
-				EE0CBEE725DBDF7E00F6F28A /* Service */,
+				EE0CBEE725DBDF7E00F6F28A /* Model */,
+				EE8335D625E2891000C766C8 /* ViewModel */,
 				EE0CBEE625DBDF7200F6F28A /* VIew */,
 				EE0CBEBC25DBDF5D00F6F28A /* Assets.xcassets */,
 				EE0CBEC125DBDF5D00F6F28A /* Info.plist */,
@@ -152,13 +161,14 @@
 			path = VIew;
 			sourceTree = "<group>";
 		};
-		EE0CBEE725DBDF7E00F6F28A /* Service */ = {
+		EE0CBEE725DBDF7E00F6F28A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EE61DE8625E1535E001DE444 /* WebSocketProvider */,
 				EE0CBEEE25DBE0DD00F6F28A /* SignalClient.swift */,
 				EE0CBF0F25DBF17B00F6F28A /* WebRTCClient.swift */,
 			);
-			path = Service;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		EE0CBEF325DBE3F000F6F28A /* Entity */ = {
@@ -167,8 +177,26 @@
 				EE0CBEF425DBE40300F6F28A /* Message.swift */,
 				EE0CBEFC25DBE4BD00F6F28A /* SessionDescription.swift */,
 				EE0CBF0125DBE72700F6F28A /* IceCandidate.swift */,
+				EE8335DF25E28AC000C766C8 /* Config.swift */,
+				EE31B75925E67D52007A672F /* ExtensionWebRTCState.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		EE61DE8625E1535E001DE444 /* WebSocketProvider */ = {
+			isa = PBXGroup;
+			children = (
+				EE61DE8725E15386001DE444 /* NativeWebSocket.swift */,
+			);
+			path = WebSocketProvider;
+			sourceTree = "<group>";
+		};
+		EE8335D625E2891000C766C8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EE8335D725E2892400C766C8 /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,7 +339,11 @@
 				EE0CBEF525DBE40300F6F28A /* Message.swift in Sources */,
 				EE0CBF0225DBE72700F6F28A /* IceCandidate.swift in Sources */,
 				EE0CBEEF25DBE0DD00F6F28A /* SignalClient.swift in Sources */,
+				EE8335D825E2892400C766C8 /* ContentViewModel.swift in Sources */,
+				EE31B75A25E67D52007A672F /* ExtensionWebRTCState.swift in Sources */,
 				EE0CBEB925DBDF5C00F6F28A /* StudyWebRTCApp.swift in Sources */,
+				EE8335E025E28AC000C766C8 /* Config.swift in Sources */,
+				EE61DE8825E15386001DE444 /* NativeWebSocket.swift in Sources */,
 				EE0CBF1025DBF17B00F6F28A /* WebRTCClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,6 +415,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -444,6 +477,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -474,7 +508,7 @@
 				DEVELOPMENT_TEAM = MZU2PY4WRX;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = StudyWebRTC/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -496,7 +530,7 @@
 				DEVELOPMENT_TEAM = MZU2PY4WRX;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = StudyWebRTC/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

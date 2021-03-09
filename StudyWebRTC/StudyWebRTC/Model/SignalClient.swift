@@ -26,20 +26,16 @@ protocol WebSocketProvider: class {
 
 protocol SignalClientDelegate: class {
     // シグナルサーバー接続時のコールバック
-    func signalClientDidConnect(_ signalClient: SignalClient)
+    func signalClientDidConnect(_ signalClient: SignalClientService)
     // シグナルサーバー切断時のコールバック
-    func signalClientDidDisConnect(_ signalClinet: SignalClient)
+    func signalClientDidDisConnect(_ signalClinet: SignalClientService)
     // sdp受信コールバック
-    func signalClient(_ signalCilent: SignalClient, didReceiveRemoteSdp sdp: RTCSessionDescription)
+    func signalClient(_ signalCilent: SignalClientService, didReceiveRemoteSdp sdp: RTCSessionDescription)
     // candidate受信コールバック
-    func signalClient(_ signalCilent: SignalClient, didReceiveCandinate candinate: RTCIceCandidate)
+    func signalClient(_ signalCilent: SignalClientService, didReceiveCandinate candinate: RTCIceCandidate)
 }
 
-protocol SignalClient {
-    var delegate: SignalClientDelegate? { get }
-}
-
-class SignalClientService: SignalClient {
+class SignalClientService {
     private let decoder = JSONDecoder()
     private let encoder = JSONEncoder()
     private let webSocket: WebSocketProvider
